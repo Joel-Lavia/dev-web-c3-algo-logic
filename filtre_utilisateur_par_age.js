@@ -3,12 +3,19 @@
 // ________________________________
 
 const personnes = [
-    { nom: 'Alice', age: 25 },
-    { nom: 'Bob', age: 30 },
-    { nom: 'Charlie', age: 20 }
-  ];
-  const ageMinimum = 25;
+  { nom: "Alice", age: 25 },
+  { nom: "Bob", age: 30 },
+  { nom: "Charlie", age: 20 },
+];
 
-  /**
-   * Ex : Utilisateurs de 25 ans et plus : [{ nom: 'Alice', age: 25 }, { nom: 'Bob', age: 30 }]
-   */
+
+function filterAge() {
+  const ageFilter = personnes.filter((allage) => allage.age >= 25);
+  return ageFilter;
+}
+console.log(filterAge());
+const ageMinimum = 25;
+
+/**
+ * Ex : Utilisateurs de 25 ans et plus : [{ nom: 'Alice', age: 25 }, { nom: 'Bob', age: 30 }]
+ */
